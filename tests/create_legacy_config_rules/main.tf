@@ -8,11 +8,11 @@ module "create_config_rules" {
 }
 
 module "vendor" {
-  source = "git::https://github.com/plus3it/aws-config-rules.git?ref=e6fe305462333b26b55b30fc8586c4cf6f853907"
+  source = "git::https://github.com/MetroStar/aws-config-rules.git?ref=e6fe305462333b26b55b30fc8586c4cf6f853907"
 }
 
 module "config" {
-  source = "git::https://github.com/plus3it/terraform-aws-tardigrade-config.git?ref=4.2.0"
+  source = "git::https://github.com/MetroStar/terraform-aws-tardigrade-config.git?ref=4.2.0"
 
   config_bucket = aws_s3_bucket.this.id
 }
